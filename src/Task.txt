@@ -1,0 +1,42 @@
+about the task:
+
+1- create a react app named contacts 
+2- do not use react-bootstrap in this app.
+3- create 6 components named :
+  - Navbar.js
+  - Home.js
+  - Profile.js
+  - Profiles.js
+  - User.js
+  - AboutUs.js 
+===>  All this components must be functionnel components.
+
+4- the navbar must contain :  home / Profiles / about    and a button "login" that
+
+5 - the profiles will direct us to differents profiles.
+6 - use the function map and the data file that I join to display the profile.
+( surely you will use props ).
+
+
+NO STATE AND HOOKS IN THIS TASK :).....
+
+7- use REACT ROUTER DOM  to make connections between all this components.
+
+----------------------------------------------------------------
+here the steps of how to use react router dom... (
+  install react-router-dom@5
+)
+//step1: import browerRouter ok
+//step2: wrap the components inside of the BrowserRouter ok
+
+//A: Simple Routing :
+//step1: import Route
+//step2: send the destination  component  in the Route component and specify the path
+//step3:(inside the navbar component) wrap the element that will lead you to the destination in a Link component and specify the destination 
+
+//B:Dynamic Route:
+//step1: send the destination  component (User) in the Route component and specify the path includin a variable (:ID)
+//step2:(inside the profile compoenent) wrap the element that will lead you to the destination in a Link component 
+//and specify the destination replacing the variable  with the real value (el.id)
+//step4: (inside the user component )  receive the the value of the variable using match or useParams
+//step4: (inside the user component ) find that specific user inside the data table using (find)
